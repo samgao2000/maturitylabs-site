@@ -151,11 +151,11 @@
         <h2>Where is your AI today?</h2>
         <p class="hint">Pick the level that sounds most like your organization.</p>
         <ol class="rungs" aria-label="AI maturity levels">
-          <li class="rung" data-l="1"><button type="button" aria-pressed="false"><span class="n">1</span><span class="bar">Experiments</span></button></li>
-          <li class="rung" data-l="2"><button type="button" aria-pressed="false"><span class="n">2</span><span class="bar">Projects</span></button></li>
-          <li class="rung" data-l="3"><button type="button" aria-pressed="true"><span class="n">3</span><span class="bar">Practice</span></button></li>
-          <li class="rung" data-l="4"><button type="button" aria-pressed="false"><span class="n">4</span><span class="bar">Measured</span></button></li>
-          <li class="rung" data-l="5"><button type="button" aria-pressed="false"><span class="n">5</span><span class="bar">Compounding</span></button></li>
+          <li class="rung" data-l="1"><button type="button" aria-pressed="false"><span class="n">1</span><span class="bar">Initial</span></button></li>
+          <li class="rung" data-l="2"><button type="button" aria-pressed="false"><span class="n">2</span><span class="bar">Managed</span></button></li>
+          <li class="rung" data-l="3"><button type="button" aria-pressed="true"><span class="n">3</span><span class="bar">Defined</span></button></li>
+          <li class="rung" data-l="4"><button type="button" aria-pressed="false"><span class="n">4</span><span class="bar">Quantitatively Managed</span></button></li>
+          <li class="rung" data-l="5"><button type="button" aria-pressed="false"><span class="n">5</span><span class="bar">Optimizing</span></button></li>
         </ol>
         <div class="readout" aria-live="polite">
           <h3 id="r-title"></h3>
@@ -233,17 +233,17 @@
 <footer>
   <div class="wrap">
     <p>© 2026 Technology &amp; Management Consulting, Inc. Aurora, Illinois.</p>
-    <p>CMMI® is a registered trademark of ISACA. AIM refers to CMMI AI Maturity.</p>
+    <p>CMMI® is a registered trademark of ISACA. AIM refers to CMMI AI Maturity. Maturity level names follow CMMI.</p>
   </div>
 </footer>
 
 <script>
   const levels = {
-    1:{t:"Level 1: Experiments", now:"People try AI tools on their own. Results depend on who is doing it, and little is shared or repeated.", next:"Next step: pick two or three use cases and give them an owner and a budget."},
-    2:{t:"Level 2: Projects", now:"AI work happens as funded projects. Some succeed, but each team does it its own way.", next:"Next step: agree on common practices for data, risk and delivery across teams."},
-    3:{t:"Level 3: Practice", now:"The organization has a standard way to select, build and run AI. Teams reuse what works.", next:"Next step: measure AI outcomes with real numbers, not anecdotes."},
-    4:{t:"Level 4: Measured", now:"AI performance is tracked with data. Leaders decide where to invest based on evidence.", next:"Next step: use those measurements to improve continuously and predictably."},
-    5:{t:"Level 5: Compounding", now:"AI improves the way the organization works, and each gain makes the next one easier.", next:"Keep it there: an independent appraisal confirms the level and shows where it could slip."}
+    1:{t:"Level 1: Initial", now:"People try AI tools on their own. Results depend on who is doing it, and little is shared or repeated.", next:"Next step: pick two or three use cases and give them an owner and a budget."},
+    2:{t:"Level 2: Managed", now:"AI work runs as planned, funded projects. Each team succeeds in its own way, but practices differ from team to team.", next:"Next step: agree on common practices for data, risk and delivery across teams."},
+    3:{t:"Level 3: Defined", now:"The organization has a standard way to select, build and run AI. Teams reuse what works.", next:"Next step: measure AI outcomes with real numbers, not anecdotes."},
+    4:{t:"Level 4: Quantitatively Managed", now:"AI performance is tracked with data. Leaders decide where to invest based on evidence.", next:"Next step: use those measurements to improve continuously and predictably."},
+    5:{t:"Level 5: Optimizing", now:"AI improves the way the organization works, and each gain makes the next one easier.", next:"Keep it there: an independent appraisal confirms the level and shows where it could slip."}
   };
   const buttons = document.querySelectorAll('.rung button');
   function show(l){
